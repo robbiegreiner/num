@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Number Guesser</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header role="banner">
+		<div class="headings">
+
+
+		<h1>
+			<span class="number">Number</span>
+			<span class="guesser">Guesser</span>
+		</h1>
+		</div>
+	</header>
+
+
+	<form class="guessform">
+		<label for="guess a number"><input id="num-input" placeholder="Enter your number here" type="text"></label>
+
+		<div class="buttoncontainer">
+			<input id="submitbutton" name="submit" type="submit" value="Guess"> <input class="buttons2" id="clearbutton" name="clear" type="reset" value="Clear">
+		</div>
+	</form>
+
+
+	<div class="showcasearea">
+		<section role="presentation" id="topmsg">
+			<p>&nbsp;</p>
+		</section>
+
+
+		<div class="guessedspace">
+		<p class="guessednumber"><span id="guessednum"></span>
+		</p>
+		<img alt="Angry man pointing at user" id="angryman" src="https://4.bp.blogspot.com/-gwT6clvQ9TE/V8jZQy-XOjI/AAAAAAAABSA/uQXGYTPyl0MjsQmTQa9TzHeuNHm_2BvnQCLcB/s1600/angryman.png">
+		</div>
+
+
+		<section role="presentation" id="feedback">
+			<p>&nbsp;</p>
+		</section>
+
+
+		<form class="biggergame">
+			<input id="newgame" name="Next Level" type="submit" value="Next Level">
+		</form>
+	</div>
+
+
+	<div class="minmax">
+		<form action="index.html" class="" method="post">
+			<input id="newmin" name="newmin" placeholder="Enter a new minimum" type="text"> <input id="newmax" name="newmax" placeholder="Enter a new maximum" type="text"> <input id="submaxminbutton" name="submaxmin" type="submit" value="New Range">
+		</form>
+	</div>
+
+
+	<div class="currentrange">
+		<p>Current range is between <span id="mintext">&nbsp;</span> and <span id="maxtext">&nbsp;</span></p>
+	</div>
+
+
+	<div class="resetbuttoncontainer">
+		<button class="resetbutton" id="resetbutton" onclick="window.location.reload()" type="button">Reset</button>
+	</div>
+	<script charset="utf-8" src="myscripts.js">
+	</script>
+</body>
+</html>
